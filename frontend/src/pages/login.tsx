@@ -9,6 +9,6 @@ const Login: NextPage = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Login;
