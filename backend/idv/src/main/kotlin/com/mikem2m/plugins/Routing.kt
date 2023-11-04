@@ -1,13 +1,11 @@
 package com.mikem2m.plugins
 
+import com.mikem2m.routes.customerRouting
 import io.ktor.server.application.*
-import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        customerRouting()
     }
 }
